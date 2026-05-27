@@ -3,218 +3,279 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sustentabilidade na Agricultura</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Agrinho 2026 | Sustentabilidade</title>
 
-  <!-- Ícones -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <meta name="description" content="Projeto Agrinho voltado à sustentabilidade, educação ambiental e impacto social.">
+  <meta name="keywords" content="Agrinho, sustentabilidade, meio ambiente, educação ambiental">
 
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">
-      <h1>Sustentabilidade na Agricultura</h1>
-    </div>
+  <button id="topBtn">↑</button>
 
-    <nav class="navbar" id="navbar">
-      <a href="#hero">Início</a>
-      <a href="#sobre">Sustentabilidade</a>
-      <a href="#praticas">Práticas</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#curiosidades">Curiosidades</a>
+  <header>
+    <nav>
+      <h2 class="logo">AGRINHO</h2>
+
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button id="darkMode">🌙</button>
     </nav>
-
-    <div class="menu-mobile" id="menu-mobile">
-      <i class="fa-solid fa-bars"></i>
-    </div>
   </header>
 
-  <!-- BANNER -->
-  <section class="banner">
-    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1400&auto=format&fit=crop" alt="Agricultura sustentável">
-  </section>
-
   <!-- HERO -->
-  <section class="hero" id="hero">
+
+  <section id="inicio" class="hero">
+
     <div class="hero-content">
-      <h2>Produzir alimentos hoje sem comprometer o amanhã.</h2>
+      <h1>AGRINHO 2026</h1>
+
       <p>
-        A agricultura sustentável preserva os recursos naturais,
-        protege a biodiversidade e garante qualidade de vida.
+        Cultivando sustentabilidade para um futuro melhor
       </p>
 
-      <a href="#sobre" class="btn">Saiba Mais</a>
+      <a href="#sobre" class="btn">
+        Saiba Mais
+      </a>
     </div>
+
   </section>
 
   <!-- SOBRE -->
-  <section class="sobre reveal" id="sobre">
-    <div class="container">
-      <h2>O que é Agricultura Sustentável?</h2>
 
-      <p>
-        A agricultura sustentável é um modelo de produção que busca
-        atender às necessidades atuais da sociedade sem prejudicar
-        as futuras gerações.
-      </p>
+  <section id="sobre" class="section">
 
-      <div class="cards-sobre">
-        <div class="card">
-          <i class="fa-solid fa-seedling"></i>
-          <h3>Preservação do Solo</h3>
-          <p>
-            Técnicas sustentáveis evitam erosão e mantêm a fertilidade.
-          </p>
-        </div>
+    <h2>Sobre o Projeto</h2>
 
-        <div class="card">
-          <i class="fa-solid fa-water"></i>
-          <h3>Uso Consciente da Água</h3>
-          <p>
-            Irrigação inteligente reduz desperdícios e protege rios.
-          </p>
-        </div>
+    <div class="cards">
 
-        <div class="card">
-          <i class="fa-solid fa-leaf"></i>
-          <h3>Biodiversidade</h3>
-          <p>
-            A preservação das espécies mantém o equilíbrio ambiental.
-          </p>
-        </div>
+      <div class="card">
+        <h3>O que é o Agrinho?</h3>
+
+        <p>
+          Projeto educacional voltado à conscientização ambiental e sustentabilidade.
+        </p>
       </div>
+
+      <div class="card">
+        <h3>Objetivo</h3>
+
+        <p>
+          Incentivar práticas sustentáveis e educação ambiental na comunidade.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Impacto Social</h3>
+
+        <p>
+          Promover mudanças positivas para o meio ambiente e sociedade.
+        </p>
+      </div>
+
     </div>
+
   </section>
 
-  <!-- PRÁTICAS -->
-  <section class="praticas reveal" id="praticas">
-    <div class="container">
-      <h2>Práticas Sustentáveis</h2>
+  <!-- OBJETIVOS -->
 
-      <div class="grid-praticas">
+  <section id="objetivos" class="section green">
 
-        <div class="card">
-          <i class="fa-solid fa-recycle"></i>
-          <h3>Rotação de Culturas</h3>
-          <p>
-            Alternar culturas melhora o solo e reduz pragas naturalmente.
-          </p>
-        </div>
+    <h2>Objetivos</h2>
 
-        <div class="card">
-          <i class="fa-solid fa-droplet"></i>
-          <h3>Uso Consciente da Água</h3>
-          <p>
-            Sistemas de irrigação eficientes economizam água.
-          </p>
-        </div>
+    <div class="cards">
 
-        <div class="card">
-          <i class="fa-solid fa-solar-panel"></i>
-          <h3>Energia Renovável</h3>
-          <p>
-            O uso de energia solar diminui impactos ambientais.
-          </p>
-        </div>
-
-        <div class="card">
-          <i class="fa-solid fa-compost"></i>
-          <h3>Compostagem</h3>
-          <p>
-            Resíduos orgânicos viram adubo natural para o solo.
-          </p>
-        </div>
-
-        <div class="card">
-          <i class="fa-solid fa-tractor"></i>
-          <h3>Agricultura de Precisão</h3>
-          <p>
-            Tecnologia aumenta produtividade com menor desperdício.
-          </p>
-        </div>
-
+      <div class="card">
+        <h3>🌱 Conscientização</h3>
       </div>
+
+      <div class="card">
+        <h3>📚 Educação Ambiental</h3>
+      </div>
+
+      <div class="card">
+        <h3>🤝 Participação</h3>
+      </div>
+
+      <div class="card">
+        <h3>💡 Inovação Sustentável</h3>
+      </div>
+
     </div>
+
   </section>
 
   <!-- GALERIA -->
-  <section class="galeria reveal" id="galeria">
-    <div class="container">
-      <h2>Galeria Sustentável</h2>
 
-      <div class="grid-galeria">
+  <section id="galeria" class="section">
 
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="">
+    <h2>Galeria</h2>
 
-        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=800&auto=format&fit=crop" alt="">
+    <div class="gallery">
 
-        <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?q=80&w=800&auto=format&fit=crop" alt="">
+      <img src="https://picsum.photos/300/200?1">
+      <img src="https://picsum.photos/300/200?2">
+      <img src="https://picsum.photos/300/200?3">
+      <img src="https://picsum.photos/300/200?4">
 
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop" alt="">
-
-      </div>
     </div>
+
+  </section>
+
+  <!-- VIDEOS -->
+
+  <section class="section green">
+
+    <h2>Vídeos</h2>
+
+    <div class="videos">
+
+      <iframe width="400" height="250"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      </iframe>
+
+    </div>
+
   </section>
 
   <!-- CURIOSIDADES -->
-  <section class="curiosidades reveal" id="curiosidades">
-    <div class="container">
-      <h2>Curiosidades</h2>
 
-      <div class="cards-curiosidades">
+  <section class="section">
 
-        <div class="card">
-          <h3>🌱 70%</h3>
-          <p>
-            A agricultura utiliza cerca de 70% da água doce do planeta.
-          </p>
-        </div>
+    <h2>Curiosidades</h2>
 
-        <div class="card">
-          <h3>☀️ Energia Limpa</h3>
-          <p>
-            Fazendas sustentáveis usam cada vez mais energia solar.
-          </p>
-        </div>
+    <div class="cards">
 
-        <div class="card">
-          <h3>🚜 Tecnologia</h3>
-          <p>
-            Sensores inteligentes ajudam a reduzir desperdícios agrícolas.
-          </p>
-        </div>
-
+      <div class="card">
+        <h3>500+</h3>
+        <p>Pessoas impactadas</p>
       </div>
+
+      <div class="card">
+        <h3>30%</h3>
+        <p>Redução de desperdício</p>
+      </div>
+
+      <div class="card">
+        <h3>100+</h3>
+        <p>Mudas plantadas</p>
+      </div>
+
     </div>
+
   </section>
 
-  <!-- RODAPÉ -->
-  <footer class="footer">
-    <h3>Projeto Agrinho</h3>
-    <p>Desenvolvido para conscientização sobre sustentabilidade.</p>
+  <!-- IMPACTO -->
 
-    <div class="social">
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  <section class="section green">
+
+    <h2>Impacto</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <p>
+          O projeto ajudou na conscientização da comunidade local.
+        </p>
+      </div>
+
+      <div class="card">
+        <p>
+          Incentivou práticas ecológicas e sustentáveis.
+        </p>
+      </div>
+
     </div>
 
-    <p class="copy">© 2026 - Agrinho</p>
+  </section>
+
+  <!-- EQUIPE -->
+
+  <section class="section">
+
+    <h2>Equipe</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Participantes</h3>
+      </div>
+
+      <div class="card">
+        <h3>Professores</h3>
+      </div>
+
+      <div class="card">
+        <h3>Colaboradores</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SUSTENTABILIDADE -->
+
+  <section id="sustentabilidade" class="section green">
+
+    <h2>Sustentabilidade</h2>
+
+    <p>
+      Incentivamos reciclagem, preservação ambiental e agricultura sustentável.
+    </p>
+
+  </section>
+
+  <!-- CONTATO -->
+
+  <section id="contato" class="section">
+
+    <h2>Contato</h2>
+
+    <form>
+
+      <input type="text" placeholder="Seu nome" required>
+
+      <input type="email" placeholder="Seu email" required>
+
+      <textarea placeholder="Mensagem"></textarea>
+
+      <button type="submit" class="btn">
+        Enviar
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 Projeto Agrinho
+    </p>
+
+    <p>
+      Desenvolvido para conscientização ambiental
+    </p>
+
   </footer>
 
-  <!-- BOTÃO TOPO -->
-  <button id="topBtn">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-
   <script src="script.js"></script>
+
 </body>
 </html>

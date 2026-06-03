@@ -1,27 +1,15 @@
-// ABRIR PESQUISAS
+// Seleciona os elementos do HTML
+const botao = document.getElementById('btnToggle');
+const conteudo = document.getElementById('conteudoInfo');
 
-const infoBtns = document.querySelectorAll('.info-btn');
-
-infoBtns.forEach(btn => {
-
-  btn.addEventListener('click', () => {
-
-    const content = btn.nextElementSibling;
-
-    if(content.style.display === 'block'){
-
-      content.style.display = 'none';
-
-      btn.innerText = 'Ver Pesquisa';
-
-    }else{
-
-      content.style.display = 'block';
-
-      btn.innerText = 'Fechar Pesquisa';
-
-    }
-
-  });
-
+// Adiciona o evento de clique no botão
+botao.addEventListener('click', () => {
+  // Verifica se o conteúdo está escondido
+  if (conteudo.style.display === 'none' || conteudo.style.display === '') {
+    conteudo.style.display = 'block';
+    botao.textContent = 'Fechar';
+  } else {
+    conteudo.style.display = 'none';
+    botao.textContent = 'Saiba Mais';
+  }
 });

@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Concurso Agrinho</title>
-  <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Colheita Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="cabecalho">
+        <h1>Eco-Colheita Sustentável</h1>
+        <p>Tema: Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+    </header>
 
-  <div class="container">
-    <h2>Projeto Agrinho 2026</h2>
-    <p>Este é o resumo do projeto sobre sustentabilidade no campo.</p>
-    
-    <button class="info-btn" id="btnToggle">Saiba Mais</button>
+    <main class="conteudo-principal">
+        <!-- Seção de Instruções exigida pelo regulamento para nota máxima -->
+        <section class="painel-instrucoes">
+            <h2>Como Jogar</h2>
+            <p>Use as <strong>setas do teclado</strong> ou os <strong>botões na tela</strong> para guiar a Colheitadeira.</p>
+            <ul>
+                <li><span class="item-legenda item-alimento"></span> <strong>Alimento Seguro:</strong> Aumenta a produção (+10 pts).</li>
+                <li><span class="item-legenda item-arvore"></span> <strong>Reflorestamento:</strong> Garante equilíbrio ambiental (+15 pts).</li>
+                <li><span class="item-legenda item-obstaculo"></span> <strong>Poluição/Praga:</strong> Cuidado! Fim de jogo.</li>
+            </ul>
+            <div class="controles-acessibilidade">
+                <button id="btn-tema" class="btn-utilitario">Alternar Contraste</button>
+            </div>
+        </section>
 
-    <div class="info-content" id="conteudoInfo">
-      <p>Aqui estão as informações detalhadas sobre o concurso, regulamentos e prazos de inscrição.</p>
-      <a href="https://www.agrinho.com.br" target="_blank">Visitar site oficial</a>
-    </div>
-  </div>
+        <!-- Área Central do Jogo -->
+        <section class="area-jogo">
+            <div class="placar-container">
+                <div class="bloco-placar">Produção: <span id="pontos-producao">0</span></div>
+                <div class="bloco-placar">Equilíbrio: <span id="pontos-ambiente">0</span></div>
+            </div>
 
-  <script src="script.js"></script>
+            <canvas id="campo-jogo" width="400" height="400"></canvas>
+
+            <div class="status-mensagem" id="mensagem-jogo">
+                Pressione uma seta ou botão para iniciar o plantio!
+            </div>
+
+            <!-- Controles Mobile / Responsividade Física -->
+            <div class="controles-touch">
+                <button class="btn-direcao" id="btn-cima">▲</button>
+                <div class="linha-horizontal">
+                    <button class="btn-direcao" id="btn-esquerda">◀</button>
+                    <button class="btn-direcao" id="btn-direita">▶</button>
+                </div>
+                <button class="btn-direcao" id="btn-baixo">▼</button>
+            </div>
+
+            <button id="btn-reiniciar" class="btn-principal" style="display: none;">Nova Safra Sustentável</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Concurso Agrinho - Categoria Programação. Desenvolvido com fins pedagógicos e ecológicos.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
